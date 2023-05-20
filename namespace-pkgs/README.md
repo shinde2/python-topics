@@ -11,3 +11,8 @@
   cd examples 
   python3 examples.py
   ```
+
+# Resources
+```
+https://packaging.python.org/en/latest/guides/packaging-namespace-packages/#native-namespace-packages
+```
