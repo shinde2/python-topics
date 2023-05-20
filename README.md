@@ -1,2 +1,1 @@
 # python-topics
-Python topics

@@ -3,8 +3,8 @@
 - Create virtual env
 -
   ```
-  pip install -e pip install -e math-add 
-  pip install -e pip install -e math-mul
+  pip install -e math-add 
+  pip install -e math-mul
   ```
 -
   ```
