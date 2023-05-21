@@ -1,4 +1,5 @@
-# Running the example
+# Namespace packages
+## Running the example
 
 - Create virtual env
 -
@@ -12,7 +13,7 @@
   python3 examples.py
   ```
 
-# Resources
+### Resources
 ```
 https://packaging.python.org/en/latest/guides/packaging-namespace-packages/#native-namespace-packages
 ```
