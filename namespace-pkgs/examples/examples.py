@@ -5,8 +5,8 @@ def main():
     add = Add(2, 5)
     mul = Mul(2, 5)
 
-    print(f"2 + 5 is {add.get()}")
-    print(f"2 * 5 is {mul.get()}")
+    print(f"Addition is {add.get()}")
+    print(f"Multiplication {mul.get()}")
 
 if __name__ == "__main__":
     main()
