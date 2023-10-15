@@ -4,7 +4,7 @@ def wsgi():
 
     environ = {
         "request_type": "GET",
-        "urs_schema": "HTTPS",
+        "url_schema": "HTTPS",
     }
 
     def start_response(status="", headers=""):
