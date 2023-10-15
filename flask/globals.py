@@ -6,5 +6,5 @@ g = cv_app #Proxy(cv_app)
 
 
 cv_request = ContextVar("Request-Context-Var")
-request = "Proxy(cv_request)"
-session = "Proxy(cv_request)"
+request = cv_request #Proxy(cv_request)
+session = cv_request #Proxy(cv_request)
