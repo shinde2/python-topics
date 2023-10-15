@@ -1,9 +1,9 @@
 After reading Flask's documentation, It wasn't really clear how "global" App and Request contexts work. This example tries to mimic some of Flask's request dispatch and context
-management functionality. If interested, look at app.py, ctx.pt and globals.py in Flask's source code. Short explanation below:
+management functionality. If interested, look at app.py, ctx.py and globals.py in Flask's source code. Short explanation below:
 
 WSGI server will call the Flask app object with request parameters as a dict and a callable for response. Flask app object itself should be a callable. It could be a function object, a 
 callable class object etc. Flask uses callable class object i.e. implements ```__call__``` method.
-Flask will push app context, request context, send appropriate signals, prepare response and send response back using the callable provided by the WSGI server and pop out the contexts.
+Flask will push app context, request context, send appropriate signals, prepare response and the send response back using the callable provided by the WSGI server and pop out the contexts.
 
 At the start of a request, if app context is not pushed, Flask will push the app context and then push the request context.
 AppContext and RequestContext are context managers which are set as a value to a context variable. Context manager ```__enter__``` and ```__exit__``` methods are used to push and pop the context respectively. Context var is a thread safe way to implement locally global like functionality so different functions, views can access them without actually passing the objects around. 
